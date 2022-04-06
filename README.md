@@ -8,10 +8,13 @@ https://github.com/MMT-TLVassociation/BonDriver_BDA
 https://github.com/rndomhack/BonRecTest
 
 使用方法は、Windowsのコマンドプロンプトで、下記のように実行すると、CH000 (CH000=1,11842.560,R,0,BS01/TS0,0x1,0xB070)にチューニングする。
+
 BonRecTest --driver BonDriver_BDA.dll --output hoge.ts --space 0 --channel 0
 
 NHK BS8Kの場合は、CH009なので、
+
 BonRecTest --driver BonDriver_BDA.dll --output hoge.ts --space 0 --channel 9
+
 を実行すると、8K放送のTLVストリームを保存できる。
 
 
