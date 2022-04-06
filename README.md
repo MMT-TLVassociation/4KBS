@@ -1,4 +1,4 @@
-# 4KBS
+# 4K BS/CS recorder
 
 本アプリでは、ISDB-S3対応のBon driverを使用。
 https://github.com/MMT-TLVassociation/BonDriver_BDA
