@@ -133,19 +133,11 @@ BOOL CMy4KGUIcppDlg::OnInitDialog()
 	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("BSフジ 4K"));
 	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("ショップチャンネル 4K"));
 	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("4K QVC"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("ザ・シネマ 4K"));
+	//((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("ザ・シネマ 4K"));
 	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("NHK BS 8K"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("J SPORTS1 (4K)"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("J SPORTS2 (4K)"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("J SPORTS3 (4K)"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("J SPORTS4 (4K)"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("スターチャンネル 4K"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("スカチャン1 4K"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("スカチャン2 4K"));
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("日本映画＋時代劇 4K"));
 	((CComboBox*)GetDlgItem(IDC_COMBO1))->AddString(_T("WOWOW 4K"));
 
-	((CComboBox*)GetDlgItem(IDC_COMBO1))->SetCurSel(9);
+	((CComboBox*)GetDlgItem(IDC_COMBO1))->SetCurSel(8);//=std::string chan = "8";//CH008にチューニング
 
 	// コンボボックスに項目を追加します。
 	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("BS朝日 4K"));//値を登録します。
@@ -156,19 +148,11 @@ BOOL CMy4KGUIcppDlg::OnInitDialog()
 	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("BSフジ 4K"));
 	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("ショップチャンネル 4K"));
 	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("4K QVC"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("ザ・シネマ 4K"));
+	//((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("ザ・シネマ 4K"));
 	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("NHK BS 8K"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("J SPORTS1 (4K)"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("J SPORTS2 (4K)"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("J SPORTS3 (4K)"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("J SPORTS4 (4K)"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("スターチャンネル 4K"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("スカチャン1 4K"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("スカチャン2 4K"));
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("日本映画＋時代劇 4K"));
 	((CComboBox*)GetDlgItem(IDC_COMBO2))->AddString(_T("WOWOW 4K"));
 
-	((CComboBox*)GetDlgItem(IDC_COMBO2))->SetCurSel(9);
+	((CComboBox*)GetDlgItem(IDC_COMBO2))->SetCurSel(8);//=std::string chan = "8";//CH008にチューニング
 	TCHAR* pEnd;
 	bool used = false;
 
@@ -180,7 +164,7 @@ BOOL CMy4KGUIcppDlg::OnInitDialog()
 
 
 	std::string ts = "hoge.ts";
-	std::string chan = "9";//CH009にチューニング
+	std::string chan = "8";//CH008にチューニング
 
 	//MFCのCStringクラスを使って,　StringをLPCTSTRに変換
 
